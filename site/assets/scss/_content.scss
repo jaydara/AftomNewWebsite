@@ -134,6 +134,9 @@
         position:relative;
         padding-bottom: 8px;
     margin-bottom: 24px;
+    @include media-breakpoint-down(sm){
+        font-size:30px;
+    }
         &:after{
             content:'';
             position:absolute;
@@ -152,7 +155,8 @@
     color:#fff !important;
     text-decoration:none;
     background-color:#22476d;
-    padding:10px 23px;
+    padding:8px 20px;
     border-radius:4px;
     display:inline-block;
+    text-transform: uppercase;
 }

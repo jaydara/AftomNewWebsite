@@ -1,5 +1,5 @@
 <section class="banner_section">
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 d-lg-block d-none">
         <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_image.png"
              src="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_image.png"
              alt="logo" loading="lazy"> 
@@ -13,6 +13,26 @@
             <div class="col-md-4  p-0 text-right banner_title_right">               
                 <h2><a href="#">Commercial Building</a></h2>            
             </div>
+        </div>
+    </div>
+    <div class="banner_slider d-lg-none">
+        <div>
+            <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img1.png"
+             src="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img1.png"
+             alt="logo" loading="lazy"> 
+            <h2><a href="#">Construction</a></h2>
+        </div>
+        <div>
+            <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img2.png"
+             src="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img2.png"
+             alt="logo" loading="lazy"> 
+             <h2><a href="#">Warehouse</a></h2>      
+        </div>
+        <div>
+            <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img3.png"
+             src="/docs/{{ .Site.Params.docs_version }}/assets/img/banner_img3.png"
+             alt="logo" loading="lazy"> 
+            <h2><a href="#">Commercial Building</a></h2>
         </div>
     </div>
 </section>

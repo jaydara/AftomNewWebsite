@@ -1,12 +1,20 @@
-<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar header-section">
+<header class="navbar navbar-expand navbar-dark flex-row bd-navbar header-section">
   <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
       <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/header-logo.png"
                                             src="/docs/{{ .Site.Params.docs_version }}/assets/img/header-logo.png"
                                             alt="logo" loading="lazy">   
     
   </a>
+    <div class="toggle d-lg-none">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="header-contact-info">
+  <a href="mailto:contact@aftom.io">{{ partial "icons/email.svg" }}contact@aftom.io</a> 
+  </div>
+    </div>
 
-  <div class="navbar-nav-scroll">
+  <div class="navbar-nav-scroll" id="navbarNav">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link{{ if .IsHome }} active{{ end }}" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
@@ -18,7 +26,7 @@
         <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Services</a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#">Covid-19 Solutions</a>
+          <a class="nav-link" href="#">Covid-19 Solutions</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">industries we serve</a>
@@ -69,7 +77,7 @@
   </ul>
 
   -->
-  <div class="header-contact-info">
+  <div class="header-contact-info mobile_none">
   <a href="mailto:contact@aftom.io">{{ partial "icons/email.svg" }}contact@aftom.io</a> 
   </div>
 </header>
