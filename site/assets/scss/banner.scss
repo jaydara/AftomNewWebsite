@@ -1,0 +1,50 @@
+.banner_section{
+    margin-top:-100px;
+    @include media-breakpoint-down(md){
+        margin-top:0;
+    }
+    h2{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 3.75rem;       
+        position: absolute;
+        font-weight: 700;
+        bottom: 0;
+        padding-left: 25%;
+        text-shadow: 4px 4px 34px rgba(0,0,0,0.65);
+        bottom:19px;
+        @media(max-width:1700px){
+            font-size:2.75rem;
+        }
+        @media(max-width:1500px){
+            padding-left:45px;
+        }
+        @include media-breakpoint-down(lg){
+            font-size:2rem;
+        }
+        @include media-breakpoint-down(sm){
+            padding-left:15px;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .banner_title_middle{
+        h2{
+            padding-left:34%;
+        }
+        @include media-breakpoint-down(lg){
+            padding-left:27%;
+        }
+        @include media-breakpoint-down(sm){
+            padding-left:15px;
+        }
+    }
+    .banner_slider {
+        .slick-slide{
+            img{
+                width:100%;
+            }
+        }
+    }
+}

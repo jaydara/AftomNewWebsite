@@ -1,0 +1,83 @@
+<header class="navbar navbar-expand navbar-dark flex-row bd-navbar header-section">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+      <img class="img-fluid mx-auto" srcset="/docs/{{ .Site.Params.docs_version }}/assets/img/header-logo.png"
+                                            src="/docs/{{ .Site.Params.docs_version }}/assets/img/header-logo.png"
+                                            alt="logo" loading="lazy">   
+    
+  </a>
+    <div class="toggle d-lg-none">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="header-contact-info">
+  <a href="mailto:contact@aftom.io">{{ partial "icons/email.svg" }}contact@aftom.io</a> 
+  </div>
+    </div>
+
+  <div class="navbar-nav-scroll" id="navbarNav">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link{{ if .IsHome }} active{{ end }}" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Services</a>
+      </li> -->
+      <li class="nav-item">
+          <a class="nav-link" href="#">Covid-19 Solutions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">industries we serve</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>      
+    </ul>
+  </div>
+
+  <!-- <ul class="navbar-nav ml-md-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        v{{ .Site.Params.docs_version }}
+      </a>
+      <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="/docs/{{ .Site.Params.docs_version }}/">Latest (4.6.x)</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/">5.0.x</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/docs/versions/">All versions</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener" aria-label="GitHub">
+        {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg") }}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+        {{ partial "icons/twitter.svg" (dict "class" "navbar-nav-svg") }}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-1 mx-1 py-3 my-n2" href="{{ .Site.Params.slack }}" target="_blank" rel="noopener" aria-label="Slack">
+        {{ partial "icons/slack.svg" (dict "class" "navbar-nav-svg") }}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-1 mx-1 py-3 my-n2" href="{{ .Site.Params.opencollective }}/" target="_blank" rel="noopener" aria-label="Open Collective">
+        {{ partial "icons/opencollective.svg" (dict "class" "navbar-nav-svg") }}
+      </a>
+    </li>
+  </ul>
+
+  -->
+  <div class="header-contact-info mobile_none">
+  <a href="mailto:contact@aftom.io">{{ partial "icons/email.svg" }}contact@aftom.io</a> 
+  </div>
+</header>
